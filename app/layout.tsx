@@ -14,18 +14,60 @@ export const metadata: Metadata = {
   publisher: 'Transporte Nacional G&G',
   robots: 'index, follow',
   metadataBase: new URL('https://transportenacionalg6g.com'),
+  
+  // Configuración completa de iconos/favicons
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: { 
+      url: '/apple-touch-icon.png', 
+      sizes: '180x180',
+      type: 'image/png'
+    },
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        url: '/web-app-manifest-192x192.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png', 
+        sizes: '512x512',
+        url: '/web-app-manifest-512x512.png',
+      },
+    ],
+  },
+  
+  // Manifest para PWA
+  manifest: '/site.webmanifest',
+  
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://transportenacionalg&g.com',
+    url: 'https://transportenacionalg6g.com',
     title: 'Transporte Nacional G&G - Servicios de Transporte Confiable',
     description: 'Empresa líder en servicios de transporte seguro, puntual y confiable en Colombia.',
     siteName: 'Transporte Nacional G&G',
+    images: [
+      {
+        url: '/web-app-manifest-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Transporte Nacional G&G Logo',
+      }
+    ],
   },
+  
   twitter: {
     card: 'summary_large_image',
-    title: 'Transporte Nacional G6G - Servicios de Transporte Confiable',
+    title: 'Transporte Nacional G&G - Servicios de Transporte Confiable',
     description: 'Empresa líder en servicios de transporte seguro, puntual y confiable en Colombia.',
+    images: ['/web-app-manifest-512x512.png'],
   },
 }
 
