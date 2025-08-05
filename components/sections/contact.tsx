@@ -156,8 +156,8 @@ Enviado desde el sitio web oficial`
   return (
     <section className="py-24 relative overflow-hidden bg-gradient-to-br from-gray-50 to-white">
       {/* Background Elements */}
-      <motion.div 
-        ref={parallaxRef}
+            <motion.div
+        ref={parallaxRef as any}
         style={{ y }}
         className="absolute inset-0 opacity-5"
       >

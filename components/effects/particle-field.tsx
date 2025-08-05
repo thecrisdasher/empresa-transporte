@@ -136,8 +136,8 @@ export function FloatingParticles() {
               y: initialPos.y,
             }}
             animate={{
-              y: [null, -100, null],
-              x: [null, Math.random() * 100 - 50, null],
+              y: [0, -100, 0],
+              x: [0, Math.random() * 100 - 50, 0],
             }}
             transition={{
               duration: Math.random() * 20 + 10,

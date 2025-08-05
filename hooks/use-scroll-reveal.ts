@@ -20,8 +20,8 @@ export function useScrollReveal(options: UseScrollRevealOptions = {}) {
   const [hasAnimated, setHasAnimated] = useState(false)
   
   const isInView = useInView(ref, {
-    threshold,
-    rootMargin,
+    amount: threshold,
+    margin: rootMargin,
   })
 
   useEffect(() => {

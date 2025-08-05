@@ -107,8 +107,8 @@ export function TestimonialsSection() {
   return (
     <section className="py-24 relative overflow-hidden bg-gradient-to-br from-white to-blue-50/50">
       {/* Background Elements */}
-      <motion.div 
-        ref={parallaxRef}
+            <motion.div
+        ref={parallaxRef as any}
         style={{ y }}
         className="absolute inset-0 opacity-5"
       >

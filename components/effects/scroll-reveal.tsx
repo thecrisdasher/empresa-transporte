@@ -40,7 +40,7 @@ export function ScrollReveal({
 
   return (
     <motion.div
-      ref={ref}
+      ref={ref as any}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={delayedVariants}
@@ -92,7 +92,7 @@ export function StaggeredReveal({
 
   return (
     <motion.div
-      ref={ref}
+      ref={ref as any}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={containerVariants}
